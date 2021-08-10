@@ -6,7 +6,12 @@ This is a simple Go application to ping websites for fun 😀😉.
 ### How it works
 
 There is a CSV file `ping_urls.csv` from which the application will read the list of urls to ping. For each url we will create a goroutine. After that, we will wait to receive channel messages from the goroutines.
-Once we receive all the messages for the urls we will bulk insert the results into MongoDB a single document for each of the response of a url.
+Once we receive all the messages for the urls we will bulk insert the results into MongoDB a single document for each of the response of a url. We will be uploading the following data to MongoDB
+
+- URL
+- Error if any
+- Time Taken To Complete The Request
+- Http Status Code
 
 ### How to run
 
