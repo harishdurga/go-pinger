@@ -28,7 +28,7 @@ cd go-pinger
 go install
 ```
 
-- Set MongoDB URI. Ex: mongodb+srv://<username>:<password>@cluster0.bqers.mongodb.net/pinger?retryWrites=true&w=majority
+- Set MongoDB URI. Ex: mongodb+srv://username:password@cluster0.bqers.mongodb.net/pinger?retryWrites=true&w=majority
 
 ```bash
 export PINGER_MONGO_CONNECT_URI=
